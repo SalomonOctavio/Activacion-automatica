@@ -1,0 +1,14 @@
+flowchart LR
+  SIM[Sólo SIM insertada en equipo] --> DETECCION{¿Intento de conexión?}
+
+  DETECCION -->|Sí| CAPTURA[Captura evento desde red]
+  CAPTURA --> BUSQUEDA[Buscar SIM en base interna]
+  BUSQUEDA -->|Encontrada| APROV[Aprovisionar con número real]
+  APROV --> SISTEMAS[Secuencia: Siebel → BSCS → ICC]
+  SISTEMAS --> GUI[GUI: confirmación y trazabilidad]
+
+  DETECCION -->|No| STANDBY[SIM en espera]
+  BUSQUEDA -->|No encontrada| RECHAZO[No se activa]
+
+  %% Notas
+  classDef note fill:#f7f7f7,stroke:#bbb,color:#333;
