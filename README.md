@@ -64,9 +64,6 @@ Restricción operativa: mantener la secuencia técnica (CRM → BSCS → ICC).
 - [`plan-uat.md`](./uat/plan-uat.md): escenarios de prueba, canales y validaciones.  
 - [`checklist-go-no-go.md`](./uat/checklist-go-no-go.md): criterios mínimos para liberación.
 
-📁 `/comms`  
-- [`comunicado-lanzamiento.md`](./comms/comunicado-lanzamiento.md): mensaje funcional sobre disponibilidad de activación automática.
-
 ---
 
 ## 🧠 Aprendizajes
